@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Github Profile</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <div class="search-container">
+            <img src="./assets/icons8-github-96.png" width="64" alt="">
+        <h1 class="heading">Github profile search</h1>
+        <div class="searchDiv">
+          <input type="text" name="search" id="search" placeholder="username" />
+          <button class="search-btn">
+            <i class="fa-brands fa-github"></i>
+          </button>
+        </div>
+      </div>
+      <h4 id="error" style="color: rgb(194, 18, 18);"></h4>
+
+      <div class="dataCard" id="userInfo-card">
+        <div class="left-data">
+          <div class="image-card">
+            <img
+              src="https://avatars.githubusercontent.com/u/123392335?v=4"
+              alt="" id="userImg"
+            />
+            <div class="name-card">
+              <h2 id="name">Ranjeet Patel</h2>
+              <p id="username">@ranjeetjs644</p>
+            </div>
+          </div>
+
+          <div class="about-card" >
+            <h3 class="about-heading">About</h3>
+            <p id="about">
+              MERN | ⚛️ReactJS | TailwindCSS❣️ | Django|👨‍💻Web & App Dev | Love to Building Stuff🔥
+            </p>
+          </div>
+          <div class="follow-card-container">
+            <div class="follow-card">
+              <p class="follow-card-heading">Followers</p>
+              <p id="follower-count" >234</p>
+            </div>
+            <div class="follow-card">
+              <p class="follow-card-heading">Followings</p>
+              <p id="following-count">675</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-data">
+          <div class="profile-btn-card">
+            <button id="profileBtn"><a href="">Check Profile</a></button>
+          </div>
+          <div class="other-info">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
